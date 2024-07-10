@@ -47,16 +47,19 @@ const Freebook = () => {
   return (
     <>
       <div className='max-w-screen-2xl container mx-auto md:px-20 px-4'>
-        <h1 className='font-semibold text-xl pb-2'> Free Offered Books</h1>
+       <div>
+       <h1 className='font-semibold text-xl pb-2'> Free Offered Books</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolorum maxime aspernatur inventore quas porro consequuntur voluptatibus distinctio voluptatem temporibus! Consequuntur iusto repellat sequi blanditiis possimus vitae eaque nesciunt consequatur.
         </p>
-      </div>
+       </div>
+     
       <div className="slider-container">
         <Slider {...settings}>
           {filterData.map((item) => (
             <Cards item={item} key={item.id} />
           ))}
         </Slider>
+      </div>
       </div>
     </>
   );
