@@ -8,7 +8,7 @@ function Banner() {
       <div className='w-full md:order-1 order-2  md:w-1/2 mt-12 md:mt-32 '>
         <div className='space-y-12'>
         <h1 className="text-4xl font-bold">
-        Welcome to Our Bookish Bliss: Where Every  {" "}
+        Welcome to the Bookish Bliss: Where Every  {" "}
          <span className='text-pink-500 text-4xl'> Book is a Journey !</span> 
         </h1>
         <p className='text-xl '>
