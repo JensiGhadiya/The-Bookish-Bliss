@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Login from './Login';
 
+
 function Navbar() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
 
@@ -46,7 +47,9 @@ function Navbar() {
      
      <li><a href='/course'>Course</a></li>
     
-     <li><a href='/contact'>Contact</a></li>
+     <div>
+     <li><a href='/contact' >Contact</a></li>
+     </div>
      <li><a href='/about'>About</a></li>
     </>
   )
@@ -119,8 +122,9 @@ function Navbar() {
     <a className="bg-black font-white px-3 py-2 rounded-md hover:bg-slat-800 duration-300 cursor-pointer"
     onClick={()=>document.getElementById("my_modal_3").showModal()}>
       Login</a>
-      <Login />
+      <Login/>
   </div>
+  
   </div>
 </div>
         </div>
